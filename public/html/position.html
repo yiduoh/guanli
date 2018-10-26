@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>职位</title>
+</head>
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+<script src="/lib/requirejs/require.js" data-main="/js/position"></script>
+<body>
+
+<header></header>
+
+<div class="col-md-10 col-md-offset-1">
+	<h4 style="float: left;">职位管理</h4>
+	<button type="button" class="btn btn-info" style="float: right;" data-toggle="modal" data-target="#tian">添加</button>
+</div>
+
+<table class="col-md-10 col-md-offset-1 table table-bordered" style="width: 1066px">
+	<thead>
+		<th>序号</th>
+		<th>公司logo</th>
+		<th>职位名称</th>
+		<th>公司名称</th>
+		<th>工作经验</th>
+		<th>职位类型</th>
+		<th>工作地点</th>
+		<th>职位薪资</th>
+		<th>操作</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+			<td>
+				<a href="">修改</a>
+				<a href="">删除</a>
+			</td>
+		</tr>
+	</tbody>
+	
+</table>
+
+
+	<nav class="col-md-3 col-md-offset-8">
+	  <ul class="pagination">
+	    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+	    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+	    <li ><a href="#">1 <span class="sr-only">(current)</span></a></li>
+	    <li ><a href="#">1 <span class="sr-only">(current)</span></a></li>
+	    <li ><a href="#">1 <span class="sr-only">(current)</span></a></li>
+	    <li 
+	    ><a href="#">1 <span class="sr-only">(current)</span></a></li>
+	    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+	   
+	  </ul>
+	</nav>
+
+
+
+<!-- 职位模态框Modal -->
+<div class="modal fade" id="tian" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="loginModalLabel">职位信息</h4>
+      </div>
+      <div class="modal-body">
+           <form>
+           	  <div class="form-group">
+			    <label for="exampleInputFile">公司logo</label>
+			    <input type="file" id="exampleInputFile" class="form-control">
+			  </div>
+
+			  
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">职位名称</label>
+			    <input type="password" class="form-control" id="positionname" placeholder="输入职位名称">
+			  </div>
+			   <div class="form-group">
+			    <label for="exampleInputPassword1">公司名称</label>
+			    <input type="password" class="form-control" id="companyname" placeholder="输入公司名称">
+			  </div>
+			   <div class="form-group">
+			    <label for="exampleInputPassword1">工作经验</label>
+			    <input type="password" class="form-control" id="expression" placeholder="输入岗位经验">
+			  </div>
+			   <div class="form-group">
+			    <label for="exampleInputPassword1">职位类型</label>
+			    <input type="password" class="form-control" id="positionstyle" placeholder="输入岗位类型">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">工作地点</label>
+			    <input type="password" class="form-control" id="positionaddress" placeholder="输入岗位地点">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleInputPassword1">职位薪资</label>
+			    <input type="password" class="form-control" id="money" placeholder="输入岗位薪资">
+			  </div>
+			  
+			</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/lib/jquery/jquery-1.12.4.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.js"></script>	
+</body>
+</html>
